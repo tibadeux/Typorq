@@ -1,57 +1,473 @@
----
-title: "Descripción de escalas de análisis"
-author: "Gerardo Daniel López Montejo"
-date: "16/11/2022"
-output: html_document
----
+# [1. Introducción](./1_Introduccion.md)
 
-# Fase 1
+# [2. Antecedentes](./2_Antecedentes.md)
 
-Para lograr una adecuada interpretación y evaluación del riesgo es importante tener el nivel de análisis de los elementos perturbadores que permita reconocer las características de peligrosidad de cada tipo de amenaza y proponer métodos de prevención y/o mitigación adecuados a las mismas.
+# [3. Objetivo](./3_Objetivo.md)
 
-El Atlas de Riesgo de Tulum está compuesto por un conjunto de mapas de referencia, peligros, vulnerabilidad y riesgos para una zona urbana de Tulum y el municipio del mismo nombre. La cobertura territorial y la desagregación de los datos de cada mapa dependerá de la temática que se indique en el apartado correspondiente. De acuerdo con la metodología desarrollada por la SEDESOL (2011), los mapas que componen el atlas deben contar con una serie de capas relacionadas para representar la magnitud del peligro o del riesgo para un sistema afectable, así como la ubicación y dimensión física del peligro y del riesgo.
+# [4. Alcances](./4_Alcances.md)
 
-El presente trabajo constituye una actualización del Atlas de Riesgo publicado en el 2015. Sin embargo, a partir del análisis realizado a dicho documento se concluye que, para mejores resultados, los datos incorporados a esta nueva versión deberían ser, en lo posible, obtenidos a partir de sus fuentes originales y no directamente del Atlas
+# [5. FASE 1. MARCO TEÓRICO](./5_FASE 1.md)
 
-Por las características geográficas y la extensión territorial del municipio se han establecido dos escalas de análisis, una denominada municipal (escala 1:XXXXX) que abarca la extensión completa del municipio y su entorno geográfico adyacente. La otra escala corresponde a la extensión urbana de la localidad de Tulum (escala 1:XXXXX). Los mapas están divididos en grandes temáticas que corresponden a la descripción del medio físico (Fisiografía, Geología, Geomorfología, Edafología, Hidrología, Climatología, Uso de Suelo y Vegetación y Áreas Naturales Protegidas).
+## 5.1 Determinación de niveles de análisis y escalas de representación cartográfica
 
-Posteriormente se presentan los mapas de peligros (geológicos, hidrometeorológicos, quimico-tecnologicos, sanitario ecológicos, socio-organizativos). Se continua con los mapas de vulnerabilidad (social  y física) para concluir con los mapas de riesgos determinados a partir de los mapas de riesgos y vulnerabilidad y con una valoración del nivel de afectación de los fenómenos perturbadores.
 
-| INDICADOR                                    | DESCRIPCIÓN                                                  | NIVEL DE ANÁLISIS | ESCALA DE REPRESENTACIÓN CARTOGRÁFICA |      |
-| -------------------------------------------- | ------------------------------------------------------------ | ----------------- | ------------------------------------- | ---- |
-| FENÓMENOS GEOLÓGICOS.                        |                                                              |                   |                                       |      |
-| Vulcanismo                                   | Investigación bibliográfica de la historia eruptiva de los volcanes más cercanos al municipio. | 1                 |                                       |      |
-| Sismos                                       | Se ubicará al municipio en un mapa de la regionalización sísmica del país. | 1                 | 1:3,000,000                           |      |
-| Tsunamis                                     | Descripción del fenómeno.                                    | 1                 | 1:5,000,000                           |      |
-| Inestabilidad de laderas                     | Se ubicarán en un mapa las zonas con pendientes pronunciadas. | 1                 |                                       |      |
-| Flujos, caídos y derrumbes                   | Se ubicarán en un mapa las zonas con antecedentes de caídas y derrumbes. | 1                 | 1:95,000                              |      |
-| Hundimientos                                 | Se ubicarán en un mapa las zonas con antecedentes de hundimientos. | 1                 | 1:350,000                             |      |
-| Subsidencias                                 |                                                              | 1                 | 1:350,000                             |      |
-| Agrietamientos                               |                                                              | 1                 | 1:350,000                             |      |
-| FENÓMENOS ASTRONÓMICOS.                      |                                                              |                   |                                       |      |
-| FENÓMENOS HIDROMETEOROLÓGICOS.               |                                                              |                   |                                       |      |
-| Ondas cálidas y gelidas                      | Análisis a partir de las estaciones hidrometeorológicas.     |                   | 1:350,000                             |      |
-| Sequías                                      | Se determinarán los índices de aridez. Se elaborará cartografía general de sequías en el municipio. | 1                 | 1:350,000                             |      |
-| Heladas                                      | Análisis de las estaciones hidrometeorológicas. Se elaborará cartografía general de heladas en el municipio. | 1                 |                                       |      |
-| Tormentas de granizo y nieve                 |                                                              | 1                 |                                       |      |
-| Ciclones tropicales                          | Descripción del fenómeno. Análisis del Índice de Peligro por Ciclones Tropicales (IPCT) | 1                 | 1:2,200,000                           |      |
-| Tornados                                     | Descripción del fenómeno.                                    | 1                 |                                       |      |
-| Tormentas de polvo                           | Descripción del fenómeno.                                    | 1                 | 1:350,000                             |      |
-| Tormentas eléctricas                         | Descripción del fenómeno. Análisis de las estaciones hidrometeorológicas. Se elaborará cartografía general. | 1                 | 1:350,000                             |      |
-| Lluvias extremas                             | Descripción del fenómeno. Análisis de las estaciones hidrometeorológicas. Calculo de los periodos de retorno de lluvias extremas y su inundación. | 1                 | 1:350,000                             |      |
-| Inundaciones fluviales, costeras y lacustres | Descripción del fenómeno. Análisis de las estaciones hidrometeorológicas. Calculo de los periodos de retorno de inundaciones por marea de tormenta. | 1                 | 1:350,000                             |      |
-| FENÓMENOS QUÍMICOS TECNOLÓGICOS              |                                                              |                   |                                       |      |
-| Almacenamiento de sustancias peligrosas      |                                                              |                   |                                       |      |
-| Incendios forestales                         |                                                              |                   |                                       |      |
-| FENÓMENOS SANITARIO ECOLÓGICOS               |                                                              |                   |                                       |      |
-| Contaminación de suelo, aire y agua          |                                                              |                   |                                       |      |
-| Epidemias y plagas                           |                                                              |                   |                                       |      |
-| FENÓMENOS SOCIO-ORGANIZATIVOS                |                                                              |                   |                                       |      |
-| Demostraciones de inconformidad social       |                                                              |                   |                                       |      |
-| Concentración masiva de población            |                                                              |                   |                                       |      |
-| Terrorismo                                   |                                                              |                   |                                       |      |
-| Vandalismo                                   |                                                              |                   |                                       |      |
-| Accidentes terrestres                        |                                                              |                   |                                       |      |
+## 5.2 Caracterización de los elementos del medio natural
 
-El sistema de proyección cartográfica empleado para la elaboración de la cartografía en este Atlas es Universal Transversa de Mercator (UTM) y como Datum de referencia el ITRF08 Época 2010, que es el nuevo Sistema Geodésico de Referencia Oficial para México (INEGI). La indicación de este sistema de referencia es observable *en la esquina superior izquierda* de cada mapa generado.
+### 5.2.1 Fisiografía
 
+### 5.2.2 Geomorfología
+
+### 5.2.3 Edafología
+
+### 5.2.4 Hidrografía, cuencas y subcuencas
+
+#### 5.2.4.1 Cuerpos de agua
+
+#### 5.2.4.2 Corrientes de agua
+
+#### 5.2.4.3 Dolinas
+
+### 5.2.5 Clima
+
+### 5.2.6 Uso de suelo y vegetación
+
+### 5.2.7 Áreas Naturales Protegidas
+
+## 5.3 Caracterización de los elementos sociales, económicos y demográficos
+
+### 5.3.1 Dinámica demográfica
+
+#### 5.3.1.1 Análisis comparativos (valores y porcentaje de población)
+
+#### 5.3.1.2 Proyección al 2020-2030-2050 (por municipio y localidad según CONAPO)
+
+#### 5.3.1.3 Distribución de población (por localidad)
+
+#### 5.3.1.4 Composición por edad y sexo (por localidad)
+
+#### 5.3.1.5 Densidad de la población (por manzana en zonas urbanas)
+
+### 5.3.2 Características sociales
+
+#### 5.3.2.1 Analfabetismo (población que asiste a la escuela y grado promedio de escolaridad)
+
+#### 5.3.2.2 Discapacidad (por localidad y manzana)
+
+#### 5.3.2.3 Lengua indígena (porcentaje que habla y población)
+
+#### 5.3.2.4 Salud (población no derechohabiente, médicos por cada 1,000 habitantes y tasa de mortalidad)
+
+#### 5.3.2.5 Pobreza
+
+#### 5.3.2.6 Hacinamiento (promedio de ocupantes por cuarto por manzana)
+
+#### 5.3.2.7 Marginación (por localidad y AGEB)
+
+### 5.3.3 Características de la vivienda
+
+#### 5.3.3.1 Tipología de vivienda (de acuerdo Guía Elaboración Atlas Riesgo CENAPRED)
+
+#### 5.3.3.2 Material de construcción (pisos tierra)
+
+#### 5.3.3.3 Servicios en la vivienda (agua, luz, drenaje)
+
+#### 5.3.3.4 Zonificación
+
+#### 5.3.3.5 Uso de suelo
+
+#### 5.3.3.6 Niveles de construcción
+
+#### 5.3.3.7 Área libre
+
+#### 5.3.3.8 Densidad de vivienda
+
+### 5.3.4 Empleo e ingresos
+
+#### 5.3.4.1 Sectores económicos (porcentaje ocupación)
+
+#### 5.3.4.2 Población Económicamente Activa (ingresos)
+
+#### 5.3.4.3 Desempleo (tasa de desempleo abierto)
+
+#### 5.3.4.4 Dependencia económica (razón de dependencia)
+
+### 5.3.5 Equipamiento e infraestructura
+
+#### 5.3.5.1 Salud
+
+#### 5.3.5.2 Educativo
+
+#### 5.3.5.3 Recreativo y/o de esparcimiento (plazas, centros comerciales, teatros, cines, auditorios, etc.)
+
+#### 5.3.5.4 Estación de bomberos, seguridad pública, albergues, rutas de evacuación, etc.
+
+#### 5.3.5.5 Presas, líneas de conducción de gas y combustible, plantas de tratamiento, estaciones eléctricas, etc.
+
+#### 5.3.5.6. Reserva territorial
+
+#### 5.3.5.7. Expansión de la mancha urbana 1980 a 2022.
+
+### 5.3.6. Asentamientos irregulares
+
+#### 5.3.6.1 Tipo de vivienda
+
+#### 5.3.6.2 Servicios en la vivienda
+
+#### 5.3.6.3 Material de la vivienda
+
+#### 5.3.6.4 Uso de suelo
+
+#### 5.3.6.5 Superficie de invasión
+
+
+# [6. FASE II. IDENTIFICACIÓN DE LA SUSCEPTIBILIDAD Y LOS PELIGROS ANTE FENÓMENOS PERTURBADORES DE ORIGEN NATURAL](./6_FASE 2.md)
+
+## 6.1 Alcance del estudio
+
+## 6.2 Fenómenos geológicos
+
+### 6.2.1 Vulcanismo
+
+#### 6.2.1.1. Metodología
+
+#### 6.2.1.2. Memoria de cálculo
+
+#### 6.2.1.3. Resultado análisis
+
+#### 6.2.1.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.2.2 Sismos
+
+#### 6.2.2.1. Metodología
+
+#### 6.2.2.2. Memoria de cálculo
+
+#### 6.2.2.3. Resultado análisis
+
+#### 6.2.2.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.2.3 Tsunamis
+
+#### 6.2.3.1. Metodología
+
+#### 6.2.3.2. Memoria de cálculo
+
+#### 6.2.3.3. Resultado análisis
+
+#### 6.2.3.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.2.4 Inestabilidad de laderas
+
+#### 6.2.4.1. Metodología
+
+#### 6.2.4.2. Memoria de cálculo
+
+#### 6.2.4.3. Resultado análisis
+
+#### 6.2.4.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+
+
+
+### 6.2.5 Flujos, caídos y derrumbes
+
+#### 6.2.5.1. Metodología
+
+#### 6.2.5.2. Memoria de cálculo
+
+#### 6.2.5.3. Resultado análisis
+
+#### 6.2.5.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+
+
+
+
+
+
+### 6.2.6 Hundimientos
+
+#### 6.2.6.1. Metodología
+
+#### 6.2.6.2. Memoria de cálculo
+
+#### 6.2.6.3. Resultado análisis
+
+#### 6.2.6.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.2.7 Subsidencia
+
+#### 6.2.7.1. Metodología
+
+#### 6.2.7.2. Memoria de cálculo
+
+#### 6.2.7.3. Resultado análisis
+
+#### 6.2.7.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.2.8 Agrietamientos
+
+#### 6.2.8.1. Metodología
+
+#### 6.2.8.2. Memoria de cálculo
+
+#### 6.2.8.3. Resultado análisis
+
+#### 6.2.8.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+## 6.3. Fenómenos astronómicos (Ley GPC/CENAPRED)
+
+## 6.4 Fenómenos hidrometeorológicos
+
+### 6.4.1 Ondas cálidas y gélidas
+
+#### 6.4.1.1. Metodología
+
+#### 6.4.1.2. Memoria de cálculo
+
+#### 6.4.1.3. Resultado análisis
+
+#### 6.4.1.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.2 Ondas cálidas y gélidas
+
+#### 6.4.2.1. Metodología
+
+#### 6.4.2.2. Memoria de cálculo
+
+#### 6.4.2.3. Resultado análisis
+
+#### 6.4.2.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.3 Sequias
+
+#### 6.4.3.1. Metodología
+
+#### 6.4.3.2. Memoria de cálculo
+
+#### 6.4.3.3. Resultado análisis
+
+#### 6.4.3.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.4 Heladas
+
+#### 6.4.4.1. Metodología
+
+#### 6.4.4.2. Memoria de cálculo
+
+#### 6.4.4.3. Resultado análisis
+
+#### 6.4.4.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.5 Tormentas de granizo
+
+#### 6.4.5.1. Metodología
+
+#### 6.4.5.2. Memoria de cálculo
+
+#### 6.4.5.3. Resultado análisis
+
+#### 6.4.5.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.6 Ciclones tropicales
+
+#### 6.4.6.1. Metodología
+
+#### 6.4.6.2. Memoria de cálculo
+
+#### 6.4.6.3. Resultado análisis
+
+#### 6.4.6.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.7 Tornados
+
+#### 6.4.7.1. Metodología
+
+#### 6.4.7.2. Memoria de cálculo
+
+#### 6.4.7.3. Resultado análisis
+
+#### 6.4.7.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.8 Tormentas de polvo
+
+#### 6.4.8.1. Metodología
+
+#### 6.4.8.2. Memoria de cálculo
+
+#### 6.4.8.3. Resultado análisis
+
+#### 6.4.8.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.9 Tormentas eléctricas
+
+#### 6.4.9.1. Metodología
+
+#### 6.4.9.2. Memoria de cálculo
+
+#### 6.4.9.3. Resultado análisis
+
+#### 6.4.9.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.10 Lluvias extremas
+
+#### 6.4.10.1. Metodología
+
+#### 6.4.10.2. Memoria de cálculo
+
+#### 6.4.10.3. Resultado análisis
+
+#### 6.4.10.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.4.11 Inundaciones (pluviales, costeras y lacustres)
+
+#### 6.4.11.1. Metodología
+
+#### 6.4.11.2. Memoria de cálculo
+
+#### 6.4.11.3. Resultado análisis
+
+#### 6.4.11.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+## 6.5 Fenómenos químicos tecnológicos
+
+### 6.5.1 Almacenamiento sustancias peligrosas
+
+#### 6.5.1.1. Metodología
+
+#### 6.5.1.2. Memoria de cálculo
+
+#### 6.5.1.3. Resultado análisis
+
+#### 6.5.1.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.5.2 Incendios forestales
+
+#### 6.5.2.1. Metodología
+
+#### 6.5.2.2. Memoria de cálculo
+
+#### 6.5.2.3. Resultado análisis
+
+#### 6.5.2.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+## 6.6 Fenómenos sanitario-ecológicos
+
+### 6.6.1 Contaminación del suelo, aire y agua
+
+#### 6.6.1.1. Metodología
+
+#### 6.6.1.2. Memoria de cálculo
+
+#### 6.6.1.3. Resultado análisis
+
+#### 6.6.1.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.6.2 Epidemias y plagas
+
+#### 6.6.2.1. Metodología
+
+#### 6.6.2.2. Memoria de cálculo
+
+#### 6.6.2.3. Resultado análisis
+
+#### 6.6.2.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+## 6.7 Fenómenos socio-organizativos
+
+### 6.7.1 Demostraciones de inconformidad social
+
+#### 6.7.1.1 Metodología
+
+#### 6.7.1.2. Memoria de cálculo
+
+#### 6.7.1.3. Resultado análisis
+
+#### 6.7.1.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.7.2 Concentración masiva de población
+
+#### 6.7.2.1 Metodología
+
+#### 6.7.2.2. Memoria de cálculo
+
+#### 6.7.2.3. Resultado análisis
+
+#### 6.7.2.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.7.3 Terrorismo
+
+#### 6.7.3.1 Metodología
+
+#### 6.7.3.2. Memoria de cálculo
+
+#### 6.7.3.3. Resultado análisis
+
+#### 6.7.3.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.7.4 Vandalismo
+
+#### 6.7.4.1 Metodología
+
+#### 6.7.4.2. Memoria de cálculo
+
+#### 6.7.4.3. Resultado análisis
+
+#### 6.7.4.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+### 6.7.5 Accidentes terrestres
+
+#### 6.7.5.1 Metodología
+
+#### 6.7.5.2. Memoria de cálculo
+
+#### 6.7.5.3. Resultado análisis
+
+#### 6.7.5.4. Mapas resultantes de susceptibilidad y peligros ponderados
+
+
+# [7. FASE III. VULNERABILIDAD](7_FASE 3.md)
+
+## 7.1. Vulnerabilidad social
+
+### 7.1.1. Grado de vulnerabilidad social
+
+#### 7.1.1.1. Características sociales y económicas
+
+#### 7.1.1.2. Capacidad de respuesta
+
+#### 7.1.1.3. Percepción social
+
+## 7.2. Vulnerabilidad física (**sistemas expuestos construidos por el hombre**)
+
+### 7.2.1. Vientos
+
+### 7.2.2. Sismos
+
+### 7.1.3. Bajas temperaturas
+
+### 7.1.4. Inundaciones
+
+
+# [8. Fase IV. RIESGO / EXPOSICIÓN](8_FASE IV.md)
+
+## 8.1 El Riesgo y sus componentes
+
+## 8.2 Cálculo del riesgo
+
+## 8.3. Riesgo por inundación pluvial
+
+## 8.4. Riesgo por ciclones tropicales
+
+## 8.5. Riesgo por temperaturas cálidas o extremas
+
+# [9. FASE V. PROPUESTAS DE ESTUDIOS, OBRAS Y ACCIONES](9_FASE V.md)
+
+## 9.1 Planteamiento de propuestas
+
+## 9.2 Priorización de acciones
+
+## 9.3. Conciliación de propuestas y priorización con Autoridades Locales.
+
+# [10. Referencias bibliográficas](10_Referencias bibliográficas.md)
+# [11. Glosario](11_Glosario.md)

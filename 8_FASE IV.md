@@ -30,7 +30,7 @@ Uno de los enfoques mas aceptados del riesgo es aquel que esta compuesto de tres
 $$
 Riesgo = f(Peligro, Vulnerabilidad, Exposición)
 $$
-
+Donde el peligro de los fenómenos perturbadores debe definirse, siempre que sea posible a través de parámetros cuantitativos que señalen su intensidad y magnitud, entendiendo la intensidad como la fuerza con la que se manifiesta el fenómeno en un sitio dado; y la magnitud como el tamaño del fenómeno, su potencial destructivo y la energía que libera.
 
 ## 8.2 Cálculo del riesgo
 
